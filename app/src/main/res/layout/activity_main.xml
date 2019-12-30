@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text = "Instructions: This quiz contains 6 questions on soap making. Be sure to attempt all without cheating. Each question is worth 5 marks. Please click the submit button at the end to see your score. THANK YOU!"
+                android:textColor="#AD0202"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/QuestionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="question 1: "/>
+
+            <TextView
+                style="@style/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "What is the function of lye?"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp">
+
+                <RadioButton
+                    android:id="@+id/radio_react"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It reacts with oils to form soap"/>
+
+                <RadioButton
+                    android:id="@+id/radio_degrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It degrades oils to form soap"/>
+
+                <RadioButton
+                    android:id="@+id/radio_nothing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It has nothing to do with soap making"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="question 2: "/>
+
+            <TextView
+                style="@style/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "What is the generally accepted water to oil ratio?"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp">
+
+                <RadioButton
+                    android:id="@+id/thirty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30% of oil wt."/>
+
+                <RadioButton
+                    android:id="@+id/thirtyEight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="38% of oil wt."/>
+
+                <RadioButton
+                    android:id="@+id/none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="There is no generally accepted ratio."/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="question 3: "/>
+
+            <TextView
+                style="@style/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "Which of the following are soft oils?"/>
+
+           <CheckBox
+               android:id="@+id/sunflower_oil"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="8dp"
+               android:text="Sunflower oil"/>
+
+            <CheckBox
+                android:id="@+id/coconut_oil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Coconut oil"/>
+            <CheckBox
+                android:id="@+id/almond_oil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Almond oil"/>
+
+            <CheckBox
+                android:id="@+id/palm_oil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Palm oil"/>
+
+            <TextView
+                style="@style/QuestionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="question 4: "/>
+
+            <TextView
+                style="@style/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "The process of cutting down on water usage in order to allow soap set faster is known as water _______"/>
+
+            <EditText
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Answer"/>
+
+
+        <TextView
+            style="@style/QuestionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="question 5: "/>
+
+        <TextView
+            style="@style/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Which of the following can make soap bars last longer?"/>
+
+        <CheckBox
+            android:id="@+id/hard_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="increase hard oil ratio"/>
+
+        <CheckBox
+            android:id="@+id/olive_oil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Use olive oil"/>
+        <CheckBox
+            android:id="@+id/stearic_acid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Use stearic acid"/>
+
+        <CheckBox
+            android:id="@+id/cure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Hardness is determined by curing time alone"/>
+
+        <TextView
+            style="@style/QuestionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="question 6: "/>
+
+        <TextView
+            style="@style/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "Only distilled water can be used as lye water"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp">
+
+            <RadioButton
+                android:id="@+id/is_true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="True"/>
+
+            <RadioButton
+                android:id="@+id/is_false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="False"/>
+
+        </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="score"
+        android:text="submit"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>
